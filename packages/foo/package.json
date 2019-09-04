@@ -1,0 +1,21 @@
+{
+    "name": "@test/foo",
+    "version": "0.0.0",
+    "description": "foo module",
+    "main": "src/index.ts",
+    "repository": "foo",
+    "author": "me",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "clean": "rimraf dist",
+        "prepublish": "yarn clean",
+        "prepare": "yarn build",
+        "build": "tsc --build"
+    },
+    "publishConfig": {
+        "access": "public",
+        "directory": "dist",
+        "registry": "http://my-awesome-registry.com/"
+    }
+}

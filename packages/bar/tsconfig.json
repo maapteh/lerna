@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "lib": ["es2018", "dom"],
+        "skipLibCheck": true,
+        "target": "es2015",
+        "module": "commonjs",
+        "sourceMap": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["node_modules", "**/*.spec.ts"],
+    "references": [
+        {
+            "path": "../foo"
+        }
+    ]
+}

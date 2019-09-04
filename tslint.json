@@ -1,0 +1,16 @@
+{
+    "extends": ["tslint-config-airbnb", "tslint-plugin-prettier", "tslint-config-prettier"],
+    "rules": {
+        "prettier": true,
+        "quotemark": [
+          true,
+          "single",
+          "avoid-escape",
+          "avoid-template",
+          "jsx-double"
+        ]
+    },
+    "linterOptions": {
+      "exclude": ["**/*.d.ts"]
+    }
+}

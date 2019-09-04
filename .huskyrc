@@ -1,0 +1,7 @@
+{
+  "skipCI": true,
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+  }
+}
